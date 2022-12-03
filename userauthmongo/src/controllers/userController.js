@@ -4,7 +4,7 @@ const UserController = {
         const {username,password}=req.body
         try {
             const user=await User.findOne({username,password})
-            if(user!==null) return res.status(200).json({message:"Logged In"})
+            if(user!==null) return res.status(200).json({m0essage:"Logged In"})
             else return res.status(200).json({message:"User Details Do Not Match"})
         } catch (error) {
             console.log(error);   
